@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>جوهرة الفايز للزجاج والسيكوريت والمرايا</title>
+  <meta name="description" content="جوهرة الفايز للزجاج والسيكوريت والمرايا في المدينة المنورة">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body{margin:0;font-family:Tahoma,Arial;background:#f5f5f5;color:#222}
+    header{background:#111;color:#fff;padding:30px;text-align:center}
+    section{padding:30px}
+    .btn{display:inline-block;padding:12px 18px;background:#0a7;color:#fff;text-decoration:none;border-radius:6px;margin:5px}
+    .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:15px}
+    .card{background:#fff;border-radius:10px;padding:15px}
+    .ph{height:160px;background:#ddd;border-radius:8px;
+         display:flex;align-items:center;justify-content:center;color:#777;font-size:14px}
+    footer{background:#222;color:#eee;text-align:center;padding:15px}
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>جوهرة الفايز للزجاج والسيكوريت والمرايا</h1>
+  <p>زجاج سيكوريت – مرايا – كبائن شاور – درابزين زجاج | المدينة المنورة</p>
+  <a class="btn" href="tel:+966550263505">اتصل الآن</a>
+  <a class="btn" href="https://wa.me/966550263505">واتساب</a>
+</header>
+
+<section>
+  <h2>الخدمات</h2>
+  <div class="grid">
+    <div class="card">
+      <div class="ph">مكان صور زجاج سيكوريت</div>
+      <h3>زجاج سيكوريت</h3>
+      <p>أبواب وواجهات زجاجية آمنة بجودة عالية.</p>
+    </div>
+    <div class="card">
+      <div class="ph">مكان صور مرايا</div>
+      <h3>مرايا</h3>
+      <p>مرايا حمامات وديكور بمقاسات خاصة.</p>
+    </div>
+    <div class="card">
+      <div class="ph">مكان صور كبائن شاور</div>
+      <h3>كبائن شاور</h3>
+      <p>كبائن زجاج عصرية بتشطيب احترافي.</p>
+    </div>
+    <div class="card">
+      <div class="ph">مكان صور درابزين</div>
+      <h3>درابزين زجاج</h3>
+      <p>حلول آمنة للسلالم والبلكونات.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>أعمالنا</h2>
+  <div class="grid">
+    <div class="ph">صورة عمل</div>
+    <div class="ph">صورة عمل</div>
+    <div class="ph">صورة عمل</div>
+    <div class="ph">صورة عمل</div>
+  </div>
+</section>
+
+<section>
+  <h2>اتصل بنا</h2>
+  <p>📞 +966550263505</p>
+  <div style="margin-top:15px">
+    <iframe
+      src="https://www.google.com/maps?q=جوهرة%20الفايز%20للزجاج%20والسيكوريت%20والمرايا&output=embed"
+      width="100%" height="300" style="border:0;border-radius:10px;" loading="lazy">
+    </iframe>
+  </div>
+</section>
+
+<footer>
+  © جوهرة الفايز – المدينة المنورة
+</footer>
+
+</body>
+</html>
