@@ -85,23 +85,36 @@ h1,h2{margin:20px 0;}
 </div>
 
 <script>
-// القوائم لكل قسم
+// المصفوفات حسب الشات السابق، مع التأكد من امتدادات الصور
 const galleries = {
-  "securit-gallery":["S.1.jpg","S.2.jpg","S.3.jpg","S.4.jpg","S.5.jpg","S.6.jpg","S.7.jpg","S.8.jpg","S.9.jpg","S.10.jpg","S.11.jpg","S.13.jpg","S.14.jpg","S.15.jpg","S.16.jpg","S.17.jpg","S.18.jpg","S.19.png"],
-  "railing-gallery":["D.1.jpg","D.2.jpg","D.3.jpg","D.4.jpg","D.5.jpg","D.6.jpg"],
-  "shower-gallery":["B.1.jpg","B.2.jpg","B.3.jpg","B.4.jpg","B.5.jpg"],
-  "mirror-gallery":["M.1.jpg","M.2.jpg","M.3.png","M.4.jpg","M.5.jpg","M.6.jpg","M.7.png","M.8.jpg","M.9.jpg","M.10.jpg","M.11.jpg","M.12.jpg","M.13.jpg","M.14.jpg","M.15.png","M.16.jpg","M.17.jpg","M.18.jpg","M.19.png","M.20.png"]
+  "securit-gallery":[
+    "S.1.jpg","S.2.jpg","S.3.jpg","S.4.jpg","S.5.jpg","S.6.jpg","S.7.jpg",
+    "S.8.jpg","S.9.jpg","S.10.jpg","S.11.jpg","S.13.jpg","S.14.jpg","S.15.jpg",
+    "S.16.jpg","S.17.jpg","S.18.jpg","S.19.png"
+  ],
+  "railing-gallery":[
+    "D.1.jpg","D.2.jpg","D.3.jpg","D.4.jpg","D.5.jpg","D.6.jpg"
+  ],
+  "shower-gallery":[
+    "B.1.jpg","B.2.jpg","B.3.jpg","B.4.jpg","B.5.jpg"
+  ],
+  "mirror-gallery":[
+    "M.1.jpg","M.2.jpg","M.3.png","M.4.jpg","M.5.jpg","M.6.jpg","M.7.png",
+    "M.8.jpg","M.9.jpg","M.10.jpg","M.11.jpg","M.12.jpg","M.13.jpg","M.14.jpg",
+    "M.15.png","M.16.jpg","M.17.jpg","M.18.jpg","M.19.png","M.20.png"
+  ]
 };
 
-// توليد الصور لكل قسم
+// توليد الصور تلقائياً لكل قسم
 for(const id in galleries){
   const container = document.getElementById(id);
   galleries[id].forEach(src=>{
     const box = document.createElement('div');
     box.className="box";
     const img = document.createElement('img');
-    img.src=src;
-    img.onclick=()=>openL(src);
+    img.src = src;
+    img.alt = src;
+    img.onclick = ()=>openL(src);
     box.appendChild(img);
     container.appendChild(box);
   });
@@ -110,7 +123,7 @@ for(const id in galleries){
 // Lightbox functions
 function openL(src){
   document.getElementById("lightbox").style.display="flex";
-  document.getElementById("lightboxImg").src=src;
+  document.getElementById("lightboxImg").src = src;
 }
 function closeL(){
   document.getElementById("lightbox").style.display="none";
