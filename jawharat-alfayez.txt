@@ -1,65 +1,200 @@
-<!-- ===== خدماتنا ===== -->
-<section>
-  <h2>خدماتنا</h2>
-  <div class="grid">
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<title>جوهرة الفايز للزجاج والسيكوريت والمرايا</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <div class="card">
-      <img src="uploaded/securit_baraza.jpg" alt="زجاج سيكوريت للواجهات والمحلات">
-      <h3>زجاج سيكوريت</h3>
-      <p>أبواب، فواصل، وواجهات زجاجية سيكوريت بتصاميم عصرية وتشطيب احترافي.</p>
-    </div>
+<style>
+body {
+  font-family: Tahoma, Arial;
+  margin: 0;
+  background: #f5f5f5;
+  color: #222;
+  text-align: center;
+}
 
-    <div class="card">
-      <img src="uploaded/mirror_sweetbeauty.jpg" alt="مرايا صالونات Sweet Beauty">
-      <h3>مرايا</h3>
-      <p>مرايا ديكور، صالونات، حمامات، ومرايا جدارية بتصاميم فاخرة ومقاسات مخصصة.</p>
-    </div>
+h1, h2 {
+  margin: 20px 0;
+}
 
-    <div class="card">
-      <img src="uploaded/shower_modern1.jpg" alt="كابينة شاور زجاجية فاخرة">
-      <h3>كبائن شاور</h3>
-      <p>كبائن شاور زجاجية بإطارات أنيقة وتشطيب احترافي يناسب الحمامات الحديثة.</p>
-    </div>
+.hero-image img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+}
 
-    <div class="card">
-      <img src="uploaded/railing_stairs.jpg" alt="درابزين زجاج للسلالم">
-      <h3>درابزين زجاج</h3>
-      <p>درابزين زجاجي للسلالم والمسابح بأمان عالي وتصميم أنيق.</p>
-    </div>
+section {
+  padding: 20px;
+}
 
-  </div>
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.image-box {
+  position: relative;
+  margin: 10px;
+}
+
+.image-box img {
+  width: 280px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.whatsapp-btn {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background: #25D366;
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 20px;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+/* Lightbox */
+#lightbox {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.85);
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+#lightbox img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 10px;
+}
+</style>
+</head>
+
+<body>
+
+<h1>جوهرة الفايز للزجاج والسيكوريت والمرايا</h1>
+
+<section class="hero-image">
+  <img src="images/S.5.jpg" alt="واجهة جوهرة الفايز">
 </section>
 
-<!-- ===== أعمالنا ===== -->
+<!-- السيكوريت -->
 <section>
-  <h2>أعمالنا</h2>
-  <div class="grid">
-
-    <!-- مرايات -->
-    <img src="uploaded/mirror_sweetbeauty.jpg" alt="مرايا صالون Sweet Beauty">
-    <img src="uploaded/mirror_salon_round.jpg" alt="مرايا دائرية للصالونات">
-    <img src="uploaded/mirror_diamond.jpg" alt="مرايا ديكور بشكل ألماسي">
-    <img src="uploaded/mirror_panels.jpg" alt="مرايا جدارية بانورامية">
-    <img src="uploaded/mirror_arch_stairs.jpg" alt="مرايا ديكور على السلم">
-    <img src="uploaded/mirror_oval_gold.jpg" alt="مرايا بيضاوية بإطار ذهبي">
-    <img src="uploaded/mirror_double_sink.jpg" alt="مرايا مزدوجة فوق مغسلة رخام">
-    <img src="uploaded/mirror_arabesque_restroom.jpg" alt="مرايا مضيئة في دورة مياه عامة">
-
-    <!-- شاورات -->
-    <img src="uploaded/shower_modern1.jpg" alt="كابينة شاور فاخرة بإطار أسود">
-    <img src="uploaded/shower_modern2.jpg" alt="كابينة شاور مع نافذة جانبية">
-
-    <!-- درابزين -->
-    <img src="uploaded/railing_stairs.jpg" alt="درابزين زجاج للسلالم">
-    <img src="uploaded/railing_pool.jpg" alt="درابزين زجاج للمسابح">
-    <img src="uploaded/railing_indoor.jpg" alt="درابزين داخلي زجاجي بتصميم حديث">
-
-    <!-- سيكوريت -->
-    <img src="uploaded/securit_baraza.jpg" alt="واجهة زجاج سيكوريت لمحل Baraza">
-    <img src="uploaded/securit_outdoor_room.jpg" alt="غرفة خارجية بزجاج سيكوريت">
-    <img src="uploaded/securit_salama.jpg" alt="فاصل زجاج سيكوريت لمركز صحي">
-    <img src="uploaded/securit_kitchen.jpg" alt="مطبخ زجاج سيكوريت بإطار أسود">
-    <img src="uploaded/securit_display.jpg" alt="كونتر عرض زجاجي بإضاءة LED">
-
-  </div>
+<h2>أعمال السيكوريت</h2>
+<div class="gallery">
+<script>
+const securit = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19];
+securit.forEach(i => {
+document.write(`
+<div class="image-box">
+<img src="images/S.${i}.jpg" onclick="openLightbox(this.src)">
+<a class="whatsapp-btn" target="_blank"
+href="https://wa.me/966550263505?text=استفسار عن زجاج سيكوريت">
+واتساب
+</a>
+</div>
+`);
+});
+</script>
+</div>
 </section>
+
+<!-- الدرابزين -->
+<section>
+<h2>درابزين زجاج</h2>
+<div class="gallery">
+<script>
+[1,2,3,4,5,6].forEach(i => {
+document.write(`
+<div class="image-box">
+<img src="images/D.${i}.jpg" onclick="openLightbox(this.src)">
+<a class="whatsapp-btn" target="_blank"
+href="https://wa.me/966550263505?text=استفسار عن درابزين زجاج">
+واتساب
+</a>
+</div>
+`);
+});
+</script>
+</div>
+</section>
+
+<!-- الشاورات -->
+<section>
+<h2>كبائن شاور</h2>
+<div class="gallery">
+<script>
+[1,2,3,4,5,6].forEach(i => {
+document.write(`
+<div class="image-box">
+<img src="images/B.${i}.jpg" onclick="openLightbox(this.src)">
+<a class="whatsapp-btn" target="_blank"
+href="https://wa.me/966550263505?text=استفسار عن كابينة شاور">
+واتساب
+</a>
+</div>
+`);
+});
+</script>
+</div>
+</section>
+
+<!-- المرايا -->
+<section>
+<h2>المرايا</h2>
+<div class="gallery">
+<script>
+[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20].forEach(i => {
+document.write(`
+<div class="image-box">
+<img src="images/M.${i}.jpg" onclick="openLightbox(this.src)">
+<a class="whatsapp-btn" target="_blank"
+href="https://wa.me/966550263505?text=استفسار عن مرايا">
+واتساب
+</a>
+</div>
+`);
+});
+</script>
+</div>
+</section>
+
+<!-- أعمالنا -->
+<section>
+<h2>أعمالنا</h2>
+<div class="gallery">
+<div class="image-box"><img src="images/S.8.jpg" onclick="openLightbox(this.src)"></div>
+<div class="image-box"><img src="images/D.3.jpg" onclick="openLightbox(this.src)"></div>
+<div class="image-box"><img src="images/B.4.jpg" onclick="openLightbox(this.src)"></div>
+<div class="image-box"><img src="images/M.6.jpg" onclick="openLightbox(this.src)"></div>
+</div>
+</section>
+
+<!-- Lightbox -->
+<div id="lightbox" onclick="closeLightbox()">
+  <img id="lightbox-img">
+</div>
+
+<script>
+function openLightbox(src) {
+  document.getElementById("lightbox").style.display = "flex";
+  document.getElementById("lightbox-img").src = src;
+}
+function closeLightbox() {
+  document.getElementById("lightbox").style.display = "none";
+}
+</script>
+
+</body>
+</html>
