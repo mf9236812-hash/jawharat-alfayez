@@ -6,50 +6,67 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
-body{
-  font-family:Tahoma,Arial;
-  margin:0;
-  background:#f5f5f5;
-  text-align:center;
+body {
+  font-family: Tahoma, Arial;
+  margin: 0;
+  background: #f5f5f5;
+  text-align: center;
 }
-h1,h2{margin:20px 0;}
-.hero img{
-  width:100%;
-  max-height:420px;
-  object-fit:cover;
+
+h1, h2 { margin: 20px 0; }
+
+.hero-image img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
 }
-.gallery{
-  display:flex;
-  flex-wrap:wrap;
-  justify-content:center;
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
-.box{
-  position:relative;
-  margin:10px;
+
+.image-box {
+  position: relative;
+  margin: 10px;
 }
-.box img{
-  width:280px;
-  height:200px;
-  object-fit:cover;
-  border-radius:10px;
-  cursor:pointer;
-  box-shadow:0 4px 10px rgba(0,0,0,.2);
+
+.image-box img {
+  width: 280px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,.2);
+}
+
+.whatsapp-btn {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background: #25D366;
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 20px;
+  font-size: 14px;
+  text-decoration: none;
 }
 
 /* Lightbox */
-#lightbox{
-  display:none;
-  position:fixed;
-  inset:0;
-  background:rgba(0,0,0,.85);
-  justify-content:center;
-  align-items:center;
-  z-index:999;
+#lightbox {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,.85);
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
 }
-#lightbox img{
-  max-width:90%;
-  max-height:90%;
-  border-radius:10px;
+
+#lightbox img {
+  max-width: 90%;
+  max-height: 90%;
 }
 </style>
 </head>
@@ -58,74 +75,99 @@ h1,h2{margin:20px 0;}
 
 <h1>جوهرة الفايز للزجاج والسيكوريت والمرايا</h1>
 
-<!-- واجهة -->
-<div class="hero">
+<!-- صورة الواجهة -->
+<div class="hero-image">
   <img src="S.5.jpg" alt="واجهة جوهرة الفايز">
 </div>
 
 <!-- السيكوريت -->
 <h2>أعمال السيكوريت</h2>
-<div class="gallery" id="securit-gallery"></div>
+<div class="gallery">
+
+<div class="image-box"><img src="S.1.jpg" onclick="openLightbox(this.src)"></div>
+<div class="image-box"><img src="S.2.jpg" onclick="openLightbox(this.src)"></div>
+<div class="image-box"><img src="S.3.jpg" onclick="openLightbox(this.src)"></div>
+<div class="image-box"><img src="S.4.jpg" onclick="openLightbox(this.src)"></div>
+<div class="image-box"><img src="S.5.jpg" onclick="openLightbox(this.src)"></div>
+<div class="image-box"><img src="S.6.jpg" onclick="openLightbox(this.src)"></div>
+<div class="image-box"><img src="S.7.jpg" onclick="openLightbox(this.src)"></div>
+<div class="image-box"><img src="S.8.jpg" onclick="openLightbox(this.src)"></div>
+<div class="image-box"><img src="S.9.jpg" onclick="openLightbox(this.src)"></div>
+<div class="image-box"><img src="S.10.jpg" onclick="openLightbox(this.src)"></div>
+<div class="image-box"><img src="S.11.jpg" onclick="openLightbox(this.src)"></div>
+<div class="image-box"><img src="S.13.jpg" onclick="openLightbox(this.src)"></div>
+<div class="image-box"><img src="S.14.jpg" onclick="openLightbox(this.src)"></div>
+<div class="image-box"><img src="S.15.jpg" onclick="openLightbox(this.src)"></div>
+<div class="image-box"><img src="S.16.jpg" onclick="openLightbox(this.src)"></div>
+<div class="image-box"><img src="S.17.jpg" onclick="openLightbox(this.src)"></div>
+<div class="image-box"><img src="S.18.jpg" onclick="openLightbox(this.src)"></div>
+<div class="image-box"><img src="S.19.png" onclick="openLightbox(this.src)"></div>
+
+</div>
 
 <!-- الدرابزين -->
 <h2>درابزين زجاج</h2>
-<div class="gallery" id="railing-gallery"></div>
+<div class="gallery">
 
-<!-- الشاورات -->
+<div class="image-box"><img src="D.1.jpg" onclick="openLightbox(this.src)"></div>
+<div class="image-box"><img src="D.2.jpg" onclick="openLightbox(this.src)"></div>
+<div class="image-box"><img src="D.3.jpg" onclick="openLightbox(this.src)"></div>
+<div class="image-box"><img src="D.4.jpg" onclick="openLightbox(this.src)"></div>
+<div class="image-box"><img src="D.5.jpg" onclick="openLightbox(this.src)"></div>
+<div class="image-box"><img src="D.6.jpg" onclick="openLightbox(this.src)"></div>
+
+</div>
+
+<!-- الشاور -->
 <h2>كبائن شاور</h2>
-<div class="gallery" id="shower-gallery"></div>
+<div class="gallery">
+
+<div class="image-box"><img src="B.1.jpg" onclick="openLightbox(this.src)"></div>
+<div class="image-box"><img src="B.2.jpg" onclick="openLightbox(this.src)"></div>
+<div class="image-box"><img src="B.3.jpg" onclick="openLightbox(this.src)"></div>
+<div class="image-box"><img src="B.4.jpg" onclick="openLightbox(this.src)"></div>
+<div class="image-box"><img src="B.5.jpg" onclick="openLightbox(this.src)"></div>
+
+</div>
 
 <!-- المرايا -->
 <h2>المرايا</h2>
-<div class="gallery" id="mirror-gallery"></div>
+<div class="gallery">
+
+<div class="image-box"><img src="M.1.jpg" onclick="openLightbox(this.src)"></div>
+<div class="image-box"><img src="M.2.jpg" onclick="openLightbox(this.src)"></div>
+<div class="image-box"><img src="M.3.png" onclick="openLightbox(this.src)"></div>
+<div class="image-box"><img src="M.4.jpg" onclick="openLightbox(this.src)"></div>
+<div class="image-box"><img src="M.5.jpg" onclick="openLightbox(this.src)"></div>
+<div class="image-box"><img src="M.6.jpg" onclick="openLightbox(this.src)"></div>
+<div class="image-box"><img src="M.7.png" onclick="openLightbox(this.src)"></div>
+<div class="image-box"><img src="M.8.jpg" onclick="openLightbox(this.src)"></div>
+<div class="image-box"><img src="M.9.jpg" onclick="openLightbox(this.src)"></div>
+<div class="image-box"><img src="M.10.jpg" onclick="openLightbox(this.src)"></div>
+<div class="image-box"><img src="M.11.jpg" onclick="openLightbox(this.src)"></div>
+<div class="image-box"><img src="M.12.jpg" onclick="openLightbox(this.src)"></div>
+<div class="image-box"><img src="M.13.jpg" onclick="openLightbox(this.src)"></div>
+<div class="image-box"><img src="M.14.jpg" onclick="openLightbox(this.src)"></div>
+<div class="image-box"><img src="M.15.png" onclick="openLightbox(this.src)"></div>
+<div class="image-box"><img src="M.16.jpg" onclick="openLightbox(this.src)"></div>
+<div class="image-box"><img src="M.17.jpg" onclick="openLightbox(this.src)"></div>
+<div class="image-box"><img src="M.18.jpg" onclick="openLightbox(this.src)"></div>
+<div class="image-box"><img src="M.19.png" onclick="openLightbox(this.src)"></div>
+<div class="image-box"><img src="M.20.png" onclick="openLightbox(this.src)"></div>
+
+</div>
 
 <!-- Lightbox -->
-<div id="lightbox" onclick="closeL()">
-  <img id="lightboxImg">
+<div id="lightbox" onclick="closeLightbox()">
+  <img id="lightbox-img">
 </div>
 
 <script>
-// المصفوفات حسب الشات السابق، مع التأكد من امتدادات الصور
-const galleries = {
-  "securit-gallery":[
-    "S.1.jpg","S.2.jpg","S.3.jpg","S.4.jpg","S.5.jpg","S.6.jpg","S.7.jpg",
-    "S.8.jpg","S.9.jpg","S.10.jpg","S.11.jpg","S.13.jpg","S.14.jpg","S.15.jpg",
-    "S.16.jpg","S.17.jpg","S.18.jpg","S.19.png"
-  ],
-  "railing-gallery":[
-    "D.1.jpg","D.2.jpg","D.3.jpg","D.4.jpg","D.5.jpg","D.6.jpg"
-  ],
-  "shower-gallery":[
-    "B.1.jpg","B.2.jpg","B.3.jpg","B.4.jpg","B.5.jpg"
-  ],
-  "mirror-gallery":[
-    "M.1.jpg","M.2.jpg","M.3.png","M.4.jpg","M.5.jpg","M.6.jpg","M.7.png",
-    "M.8.jpg","M.9.jpg","M.10.jpg","M.11.jpg","M.12.jpg","M.13.jpg","M.14.jpg",
-    "M.15.png","M.16.jpg","M.17.jpg","M.18.jpg","M.19.png","M.20.png"
-  ]
-};
-
-// توليد الصور تلقائياً لكل قسم
-for(const id in galleries){
-  const container = document.getElementById(id);
-  galleries[id].forEach(src=>{
-    const box = document.createElement('div');
-    box.className="box";
-    const img = document.createElement('img');
-    img.src = src;
-    img.alt = src;
-    img.onclick = ()=>openL(src);
-    box.appendChild(img);
-    container.appendChild(box);
-  });
-}
-
-// Lightbox functions
-function openL(src){
+function openLightbox(src){
   document.getElementById("lightbox").style.display="flex";
-  document.getElementById("lightboxImg").src = src;
+  document.getElementById("lightbox-img").src=src;
 }
-function closeL(){
+function closeLightbox(){
   document.getElementById("lightbox").style.display="none";
 }
 </script>
