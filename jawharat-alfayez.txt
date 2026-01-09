@@ -2,137 +2,118 @@
 <html lang="ar" dir="rtl">
 <head>
 <meta charset="UTF-8">
-<title>جوهرة الفايز للزجاج والسيكوريت والمرايا | المدينة المنورة</title>
-
-<meta name="description" content="جوهرة الفايز للزجاج والسيكوريت والمرايا بالمدينة المنورة - درابزين زجاج - كبائن شاور - مرايا - تنفيذ وتركيب بأعلى جودة">
-<meta name="keywords" content="زجاج سيكوريت, مرايا, كبائن شاور, درابزين زجاج, زجاج المدينة المنورة">
-<meta name="author" content="جوهرة الفايز">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>جوهرة الفايز للزجاج والسيكوريت والمرايا</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
 body{
-font-family:Tahoma;
-margin:0;
-background:#f5f5f5;
-text-align:center;
+  font-family:Tahoma,Arial;
+  margin:0;
+  background:#f5f5f5;
+  text-align:center;
 }
-header{
-background:#111;
-color:white;
-padding:20px;
+h1,h2{margin:20px 0;}
+.hero img{
+  width:100%;
+  max-height:420px;
+  object-fit:cover;
 }
-section{
-padding:30px;
+.gallery{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
 }
-.gallery img{
-width:250px;
-margin:10px;
-border-radius:10px;
-cursor:pointer;
-transition:0.3s;
+.box{
+  position:relative;
+  margin:10px;
 }
-.gallery img:hover{
-transform:scale(1.05);
+.box img{
+  width:280px;
+  height:200px;
+  object-fit:cover;
+  border-radius:10px;
+  cursor:pointer;
+  box-shadow:0 4px 10px rgba(0,0,0,.2);
 }
-.modal{
-display:none;
-position:fixed;
-top:0;left:0;
-width:100%;height:100%;
-background:rgba(0,0,0,0.8);
+
+/* Lightbox */
+#lightbox{
+  display:none;
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,.85);
+  justify-content:center;
+  align-items:center;
+  z-index:999;
 }
-.modal img{
-margin-top:5%;
-max-width:90%;
-border-radius:10px;
-}
-.close{
-color:white;
-font-size:30px;
-cursor:pointer;
-}
-.btn{
-display:inline-block;
-background:#25D366;
-color:white;
-padding:12px 20px;
-margin:10px;
-border-radius:30px;
-text-decoration:none;
-font-weight:bold;
-}
-.call{
-background:#007bff;
-}
-footer{
-background:#111;
-color:white;
-padding:20px;
-}
-iframe{
-width:100%;
-height:300px;
-border:0;
+#lightbox img{
+  max-width:90%;
+  max-height:90%;
+  border-radius:10px;
 }
 </style>
 </head>
 
 <body>
 
-<header>
 <h1>جوهرة الفايز للزجاج والسيكوريت والمرايا</h1>
-<p>المدينة المنورة</p>
-<img src="./S.5.jpg" style="width:90%;max-width:600px;border-radius:15px">
-</header>
 
-<section>
-<a class="btn" href="https://wa.me/966550263505">واتساب مباشر</a>
-<a class="btn call" href="tel:+966550263505">اتصال مباشر</a>
-</section>
-
-<section>
-<h2>أعمالنا</h2>
-<div class="gallery">
-<img src="./S.1.jpg" onclick="openImg(this.src)">
-<img src="./S.2.jpg" onclick="openImg(this.src)">
-<img src="./S.3.jpg" onclick="openImg(this.src)">
-<img src="./D.1.jpg" onclick="openImg(this.src)">
-<img src="./D.2.jpg" onclick="openImg(this.src)">
-<img src="./B.1.jpg" onclick="openImg(this.src)">
-<img src="./B.2.jpg" onclick="openImg(this.src)">
-<img src="./M.1.jpg" onclick="openImg(this.src)">
-<img src="./M.2.jpg" onclick="openImg(this.src)">
-<img src="./M.3.jpg" onclick="openImg(this.src)">
+<!-- واجهة -->
+<div class="hero">
+  <img src="S.5.jpg" alt="واجهة جوهرة الفايز">
 </div>
-</section>
 
-<section>
-<h2>موقعنا</h2>
-<iframe 
-src="https://www.google.com/maps?q=24.4672,39.6111&output=embed">
-</iframe>
-</section>
+<!-- السيكوريت -->
+<h2>أعمال السيكوريت</h2>
+<div class="gallery" id="securit-gallery"></div>
 
-<footer>
-<p>© جميع الحقوق محفوظة - جوهرة الفايز</p>
-<p>📞 0550263505</p>
-</footer>
+<!-- الدرابزين -->
+<h2>درابزين زجاج</h2>
+<div class="gallery" id="railing-gallery"></div>
 
-<div class="modal" id="modal">
-<span class="close" onclick="closeImg()">✖</span><br>
-<a id="whats" target="_blank">
-<img id="modalImg">
-</a>
+<!-- الشاورات -->
+<h2>كبائن شاور</h2>
+<div class="gallery" id="shower-gallery"></div>
+
+<!-- المرايا -->
+<h2>المرايا</h2>
+<div class="gallery" id="mirror-gallery"></div>
+
+<!-- Lightbox -->
+<div id="lightbox" onclick="closeL()">
+  <img id="lightboxImg">
 </div>
 
 <script>
-function openImg(src){
-document.getElementById("modal").style.display="block";
-document.getElementById("modalImg").src=src;
-document.getElementById("whats").href="https://wa.me/966550263505";
+// القوائم لكل قسم
+const galleries = {
+  "securit-gallery":["S.1.jpg","S.2.jpg","S.3.jpg","S.4.jpg","S.5.jpg","S.6.jpg","S.7.jpg","S.8.jpg","S.9.jpg","S.10.jpg","S.11.jpg","S.13.jpg","S.14.jpg","S.15.jpg","S.16.jpg","S.17.jpg","S.18.jpg","S.19.png"],
+  "railing-gallery":["D.1.jpg","D.2.jpg","D.3.jpg","D.4.jpg","D.5.jpg","D.6.jpg"],
+  "shower-gallery":["B.1.jpg","B.2.jpg","B.3.jpg","B.4.jpg","B.5.jpg"],
+  "mirror-gallery":["M.1.jpg","M.2.jpg","M.3.png","M.4.jpg","M.5.jpg","M.6.jpg","M.7.png","M.8.jpg","M.9.jpg","M.10.jpg","M.11.jpg","M.12.jpg","M.13.jpg","M.14.jpg","M.15.png","M.16.jpg","M.17.jpg","M.18.jpg","M.19.png","M.20.png"]
+};
+
+// توليد الصور لكل قسم
+for(const id in galleries){
+  const container = document.getElementById(id);
+  galleries[id].forEach(src=>{
+    const box = document.createElement('div');
+    box.className="box";
+    const img = document.createElement('img');
+    img.src=src;
+    img.onclick=()=>openL(src);
+    box.appendChild(img);
+    container.appendChild(box);
+  });
 }
-function closeImg(){
-document.getElementById("modal").style.display="none";
+
+// Lightbox functions
+function openL(src){
+  document.getElementById("lightbox").style.display="flex";
+  document.getElementById("lightboxImg").src=src;
+}
+function closeL(){
+  document.getElementById("lightbox").style.display="none";
 }
 </script>
 
