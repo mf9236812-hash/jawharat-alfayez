@@ -3,6 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <title>جوهرة الفايز للزجاج والسيكوريت والمرايا</title>
+
+<meta name="description" content="جوهرة الفايز لأعمال الزجاج والسيكوريت والمرايا وكبائن الشاور والدرابزين الزجاج. خبرة وجودة عالية وأسعار منافسة.">
+<meta name="keywords" content="زجاج سيكوريت, مرايا, كبائن شاور, درابزين زجاج, محلات زجاج, زجاج شاور, زجاج واجهات">
+<meta name="author" content="جوهرة الفايز">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
@@ -35,16 +39,20 @@ h1,h2{margin:20px 0;}
   cursor:pointer;
   box-shadow:0 4px 10px rgba(0,0,0,.2);
 }
-.whatsapp{
-  position:absolute;
-  bottom:10px;
-  right:10px;
-  background:#25D366;
+
+/* زر الاتصال */
+.call-btn{
+  position:fixed;
+  bottom:20px;
+  left:20px;
+  background:#0d6efd;
   color:#fff;
-  padding:6px 12px;
-  border-radius:20px;
+  padding:15px 20px;
+  border-radius:50px;
   text-decoration:none;
-  font-size:14px;
+  font-size:18px;
+  box-shadow:0 4px 10px rgba(0,0,0,.3);
+  z-index:999;
 }
 
 /* Lightbox */
@@ -55,12 +63,23 @@ h1,h2{margin:20px 0;}
   background:rgba(0,0,0,.85);
   justify-content:center;
   align-items:center;
-  z-index:999;
+  z-index:998;
 }
 #lightbox img{
   max-width:90%;
   max-height:90%;
   border-radius:10px;
+}
+
+/* الخريطة */
+.map{
+  margin:30px auto;
+  width:95%;
+  max-width:900px;
+  height:400px;
+  border-radius:15px;
+  overflow:hidden;
+  box-shadow:0 4px 10px rgba(0,0,0,.3);
 }
 </style>
 </head>
@@ -69,79 +88,32 @@ h1,h2{margin:20px 0;}
 
 <h1>جوهرة الفايز للزجاج والسيكوريت والمرايا</h1>
 
-<!-- واجهة -->
 <div class="hero">
-  <img src="S.5.jpg" alt="واجهة جوهرة الفايز">
+  <img src="S.5.jpg" alt="زجاج سيكوريت ومرايا">
 </div>
 
-<!-- السيكوريت -->
-<h2>أعمال السيكوريت</h2>
+<h2>معرض الأعمال</h2>
 <div class="gallery">
   <div class="box"><img src="S.1.jpg" onclick="openL(this.src)"></div>
   <div class="box"><img src="S.2.jpg" onclick="openL(this.src)"></div>
   <div class="box"><img src="S.3.jpg" onclick="openL(this.src)"></div>
   <div class="box"><img src="S.4.jpg" onclick="openL(this.src)"></div>
-  <div class="box"><img src="S.5.jpg" onclick="openL(this.src)"></div>
   <div class="box"><img src="S.6.jpg" onclick="openL(this.src)"></div>
-  <div class="box"><img src="S.7.jpg" onclick="openL(this.src)"></div>
-  <div class="box"><img src="S.8.jpg" onclick="openL(this.src)"></div>
-  <div class="box"><img src="S.9.jpg" onclick="openL(this.src)"></div>
-  <div class="box"><img src="S.10.jpg" onclick="openL(this.src)"></div>
-  <div class="box"><img src="S.11.jpg" onclick="openL(this.src)"></div>
-  <div class="box"><img src="S.13.jpg" onclick="openL(this.src)"></div>
-  <div class="box"><img src="S.14.jpg" onclick="openL(this.src)"></div>
-  <div class="box"><img src="S.15.jpg" onclick="openL(this.src)"></div>
-  <div class="box"><img src="S.16.jpg" onclick="openL(this.src)"></div>
-  <div class="box"><img src="S.17.jpg" onclick="openL(this.src)"></div>
-  <div class="box"><img src="S.18.jpg" onclick="openL(this.src)"></div>
-  <div class="box"><img src="S.19.png" onclick="openL(this.src)"></div>
-</div>
-
-<!-- الدرابزين -->
-<h2>درابزين زجاج</h2>
-<div class="gallery">
   <div class="box"><img src="D.1.jpg" onclick="openL(this.src)"></div>
-  <div class="box"><img src="D.2.jpg" onclick="openL(this.src)"></div>
-  <div class="box"><img src="D.3.jpg" onclick="openL(this.src)"></div>
-  <div class="box"><img src="D.4.jpg" onclick="openL(this.src)"></div>
-  <div class="box"><img src="D.5.jpg" onclick="openL(this.src)"></div>
-  <div class="box"><img src="D.6.jpg" onclick="openL(this.src)"></div>
-</div>
-
-<!-- الشاورات -->
-<h2>كبائن شاور</h2>
-<div class="gallery">
   <div class="box"><img src="B.1.jpg" onclick="openL(this.src)"></div>
-  <div class="box"><img src="B.2.jpg" onclick="openL(this.src)"></div>
-  <div class="box"><img src="B.3.jpg" onclick="openL(this.src)"></div>
-  <div class="box"><img src="B.4.jpg" onclick="openL(this.src)"></div>
-  <div class="box"><img src="B.5.jpg" onclick="openL(this.src)"></div>
+  <div class="box"><img src="M.1.jpg" onclick="openL(this.src)"></div>
 </div>
 
-<!-- المرايا -->
-<h2>المرايا</h2>
-<div class="gallery">
-  <div class="box"><img src="M.1.jpg" onclick="openL(this.src)"></div>
-  <div class="box"><img src="M.2.jpg" onclick="openL(this.src)"></div>
-  <div class="box"><img src="M.3.png" onclick="openL(this.src)"></div>
-  <div class="box"><img src="M.4.jpg" onclick="openL(this.src)"></div>
-  <div class="box"><img src="M.5.jpg" onclick="openL(this.src)"></div>
-  <div class="box"><img src="M.6.jpg" onclick="openL(this.src)"></div>
-  <div class="box"><img src="M.7.png" onclick="openL(this.src)"></div>
-  <div class="box"><img src="M.8.jpg" onclick="openL(this.src)"></div>
-  <div class="box"><img src="M.9.jpg" onclick="openL(this.src)"></div>
-  <div class="box"><img src="M.10.jpg" onclick="openL(this.src)"></div>
-  <div class="box"><img src="M.11.jpg" onclick="openL(this.src)"></div>
-  <div class="box"><img src="M.12.jpg" onclick="openL(this.src)"></div>
-  <div class="box"><img src="M.13.jpg" onclick="openL(this.src)"></div>
-  <div class="box"><img src="M.14.jpg" onclick="openL(this.src)"></div>
-  <div class="box"><img src="M.15.png" onclick="openL(this.src)"></div>
-  <div class="box"><img src="M.16.jpg" onclick="openL(this.src)"></div>
-  <div class="box"><img src="M.17.jpg" onclick="openL(this.src)"></div>
-  <div class="box"><img src="M.18.jpg" onclick="openL(this.src)"></div>
-  <div class="box"><img src="M.19.png" onclick="openL(this.src)"></div>
-  <div class="box"><img src="M.20.png" onclick="openL(this.src)"></div>
+<h2>موقعنا على الخريطة</h2>
+<div class="map">
+<iframe 
+  src="https://www.google.com/maps?q=glass+shop&output=embed"
+  width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
+</iframe>
 </div>
+
+<!-- زر الاتصال -->
+<a class="call-btn" href="tel:+966550263505">📞 اتصل بنا</a>
 
 <!-- Lightbox -->
 <div id="lightbox" onclick="closeL()">
