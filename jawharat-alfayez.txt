@@ -1,55 +1,37 @@
+/index.html
+/securate.image/
+/mirror.image/
+/bath.image/
+/darabzen.image/
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
 <meta charset="UTF-8">
 <title>جوهرة الفايز للزجاج والسيكوريت والمرايا</title>
+
+<meta name="description" content="جوهرة الفايز لأعمال الزجاج والسيكوريت والمرايا وواجهات المحلات وكبائن الشاور في السعودية">
+<meta name="keywords" content="زجاج سيكوريت, مرايا, كبائن شاور, درابزين زجاج, جدة">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
-body{
-  font-family:Tahoma,Arial;
-  margin:0;
-  background:#f5f5f5;
-  text-align:center;
-}
+body{font-family:Tahoma,Arial;margin:0;background:#f5f5f5;text-align:center}
 h1,h2{margin:20px 0}
-.hero-image img{
-  width:100%;
-  max-height:400px;
-  object-fit:cover;
-}
-.gallery{
-  display:flex;
-  flex-wrap:wrap;
-  justify-content:center;
-}
-.image-box{
-  position:relative;
-  margin:10px;
-}
-.image-box img{
-  width:280px;
-  height:200px;
-  object-fit:cover;
-  border-radius:10px;
-  cursor:pointer;
+.gallery{display:flex;flex-wrap:wrap;justify-content:center}
+.gallery img{
+  width:280px;height:200px;object-fit:cover;
+  margin:10px;border-radius:10px;
   box-shadow:0 4px 10px rgba(0,0,0,.2);
+  cursor:pointer
 }
-
-/* Lightbox */
-#lightbox{
-  display:none;
-  position:fixed;
-  inset:0;
-  background:rgba(0,0,0,.85);
-  justify-content:center;
-  align-items:center;
-  z-index:999;
+.hero-image img{width:100%;max-height:400px;object-fit:cover}
+#lightbox{display:none;position:fixed;inset:0;background:rgba(0,0,0,.85);justify-content:center;align-items:center;z-index:999}
+#lightbox img{max-width:90%;max-height:90%}
+.actions a{
+  display:inline-block;margin:10px;padding:12px 20px;
+  color:#fff;text-decoration:none;border-radius:30px;font-size:18px
 }
-#lightbox img{
-  max-width:90%;
-  max-height:90%;
-}
+.call{background:#0a7cff}
+.whatsapp{background:#25D366}
 </style>
 </head>
 
@@ -57,82 +39,81 @@ h1,h2{margin:20px 0}
 
 <h1>جوهرة الفايز للزجاج والسيكوريت والمرايا</h1>
 
-<!-- صورة الواجهة -->
-<div class="hero-image">
-  <img src="securate.image/S.5.jpg" alt="واجهة جوهرة الفايز">
+<div class="actions">
+  <a class="call" href="tel:+966500000000">📞 اتصال مباشر</a>
+  <a class="whatsapp" href="https://wa.me/966500000000" target="_blank">💬 واتساب</a>
 </div>
 
-<!-- السيكوريت -->
+<div class="hero-image">
+  <img src="./securate.image/S.5.jpg">
+</div>
+
 <h2>أعمال السيكوريت</h2>
 <div class="gallery">
-<img src="securate.image/S.1.jpg" onclick="openLightbox(this.src)">
-<img src="securate.image/S.2.jpg" onclick="openLightbox(this.src)">
-<img src="securate.image/S.3.jpg" onclick="openLightbox(this.src)">
-<img src="securate.image/S.4.jpg" onclick="openLightbox(this.src)">
-<img src="securate.image/S.5.jpg" onclick="openLightbox(this.src)">
-<img src="securate.image/S.6.jpg" onclick="openLightbox(this.src)">
-<img src="securate.image/S.7.jpg" onclick="openLightbox(this.src)">
-<img src="securate.image/S.8.jpg" onclick="openLightbox(this.src)">
-<img src="securate.image/S.9.jpg" onclick="openLightbox(this.src)">
-<img src="securate.image/S.10.jpg" onclick="openLightbox(this.src)">
-<img src="securate.image/S.11.jpg" onclick="openLightbox(this.src)">
-<img src="securate.image/S.13.jpg" onclick="openLightbox(this.src)">
-<img src="securate.image/S.14.jpg" onclick="openLightbox(this.src)">
-<img src="securate.image/S.15.jpg" onclick="openLightbox(this.src)">
-<img src="securate.image/S.16.jpg" onclick="openLightbox(this.src)">
-<img src="securate.image/S.17.jpg" onclick="openLightbox(this.src)">
-<img src="securate.image/S.18.jpg" onclick="openLightbox(this.src)">
-<img src="securate.image/S.19.png" onclick="openLightbox(this.src)">
+<img src="./securate.image/S.1.jpg" onclick="openLightbox(this.src)">
+<img src="./securate.image/S.2.jpg" onclick="openLightbox(this.src)">
+<img src="./securate.image/S.3.jpg" onclick="openLightbox(this.src)">
+<img src="./securate.image/S.4.jpg" onclick="openLightbox(this.src)">
+<img src="./securate.image/S.5.jpg" onclick="openLightbox(this.src)">
+<img src="./securate.image/S.6.jpg" onclick="openLightbox(this.src)">
+<img src="./securate.image/S.7.jpg" onclick="openLightbox(this.src)">
+<img src="./securate.image/S.8.jpg" onclick="openLightbox(this.src)">
+<img src="./securate.image/S.9.jpg" onclick="openLightbox(this.src)">
+<img src="./securate.image/S.10.jpg" onclick="openLightbox(this.src)">
+<img src="./securate.image/S.11.jpg" onclick="openLightbox(this.src)">
+<img src="./securate.image/S.13.jpg" onclick="openLightbox(this.src)">
+<img src="./securate.image/S.14.jpg" onclick="openLightbox(this.src)">
+<img src="./securate.image/S.15.jpg" onclick="openLightbox(this.src)">
+<img src="./securate.image/S.16.jpg" onclick="openLightbox(this.src)">
+<img src="./securate.image/S.17.jpg" onclick="openLightbox(this.src)">
+<img src="./securate.image/S.18.jpg" onclick="openLightbox(this.src)">
+<img src="./securate.image/S.19.png" onclick="openLightbox(this.src)">
 </div>
 
-<!-- الدرابزين -->
 <h2>درابزين زجاج</h2>
 <div class="gallery">
-<img src="darabzen.image/D.1.jpg" onclick="openLightbox(this.src)">
-<img src="darabzen.image/D.2.jpg" onclick="openLightbox(this.src)">
-<img src="darabzen.image/D.3.jpg" onclick="openLightbox(this.src)">
-<img src="darabzen.image/D.4.jpg" onclick="openLightbox(this.src)">
-<img src="darabzen.image/D.5.jpg" onclick="openLightbox(this.src)">
-<img src="darabzen.image/D.6.jpg" onclick="openLightbox(this.src)">
+<img src="./darabzen.image/D.1.jpg" onclick="openLightbox(this.src)">
+<img src="./darabzen.image/D.2.jpg" onclick="openLightbox(this.src)">
+<img src="./darabzen.image/D.3.jpg" onclick="openLightbox(this.src)">
+<img src="./darabzen.image/D.4.jpg" onclick="openLightbox(this.src)">
+<img src="./darabzen.image/D.5.jpg" onclick="openLightbox(this.src)">
+<img src="./darabzen.image/D.6.jpg" onclick="openLightbox(this.src)">
 </div>
 
-<!-- الشاور -->
 <h2>كبائن شاور</h2>
 <div class="gallery">
-<img src="bath.image/B.1.jpg" onclick="openLightbox(this.src)">
-<img src="bath.image/B.2.jpg" onclick="openLightbox(this.src)">
-<img src="bath.image/B.3.jpg" onclick="openLightbox(this.src)">
-<img src="bath.image/B.4.jpg" onclick="openLightbox(this.src)">
-<img src="bath.image/B.5.jpg" onclick="openLightbox(this.src)">
+<img src="./bath.image/B.1.jpg" onclick="openLightbox(this.src)">
+<img src="./bath.image/B.2.jpg" onclick="openLightbox(this.src)">
+<img src="./bath.image/B.3.jpg" onclick="openLightbox(this.src)">
+<img src="./bath.image/B.4.jpg" onclick="openLightbox(this.src)">
+<img src="./bath.image/B.5.jpg" onclick="openLightbox(this.src)">
 </div>
 
-<!-- المرايا -->
 <h2>المرايا</h2>
 <div class="gallery">
-<img src="mirror.image/M.1.jpg" onclick="openLightbox(this.src)">
-<img src="mirror.image/M.2.jpg" onclick="openLightbox(this.src)">
-<img src="mirror.image/M.3.png" onclick="openLightbox(this.src)">
-<img src="mirror.image/M.4.jpg" onclick="openLightbox(this.src)">
-<img src="mirror.image/M.5.jpg" onclick="openLightbox(this.src)">
-<img src="mirror.image/M.6.jpg" onclick="openLightbox(this.src)">
-<img src="mirror.image/M.7.png" onclick="openLightbox(this.src)">
-<img src="mirror.image/M.8.jpg" onclick="openLightbox(this.src)">
-<img src="mirror.image/M.9.jpg" onclick="openLightbox(this.src)">
-<img src="mirror.image/M.10.jpg" onclick="openLightbox(this.src)">
-<img src="mirror.image/M.11.jpg" onclick="openLightbox(this.src)">
-<img src="mirror.image/M.12.jpg" onclick="openLightbox(this.src)">
-<img src="mirror.image/M.13.jpg" onclick="openLightbox(this.src)">
-<img src="mirror.image/M.14.jpg" onclick="openLightbox(this.src)">
-<img src="mirror.image/M.15.png" onclick="openLightbox(this.src)">
-<img src="mirror.image/M.16.jpg" onclick="openLightbox(this.src)">
-<img src="mirror.image/M.17.jpg" onclick="openLightbox(this.src)">
-<img src="mirror.image/M.18.jpg" onclick="openLightbox(this.src)">
-<img src="mirror.image/M.19.png" onclick="openLightbox(this.src)">
-<img src="mirror.image/M.20.png" onclick="openLightbox(this.src)">
+<img src="./mirror.image/M.1.jpg" onclick="openLightbox(this.src)">
+<img src="./mirror.image/M.2.jpg" onclick="openLightbox(this.src)">
+<img src="./mirror.image/M.3.png" onclick="openLightbox(this.src)">
+<img src="./mirror.image/M.4.jpg" onclick="openLightbox(this.src)">
+<img src="./mirror.image/M.5.jpg" onclick="openLightbox(this.src)">
+<img src="./mirror.image/M.6.jpg" onclick="openLightbox(this.src)">
+<img src="./mirror.image/M.7.png" onclick="openLightbox(this.src)">
+<img src="./mirror.image/M.8.jpg" onclick="openLightbox(this.src)">
+<img src="./mirror.image/M.9.jpg" onclick="openLightbox(this.src)">
+<img src="./mirror.image/M.10.jpg" onclick="openLightbox(this.src)">
+<img src="./mirror.image/M.11.jpg" onclick="openLightbox(this.src)">
+<img src="./mirror.image/M.12.jpg" onclick="openLightbox(this.src)">
+<img src="./mirror.image/M.13.jpg" onclick="openLightbox(this.src)">
+<img src="./mirror.image/M.14.jpg" onclick="openLightbox(this.src)">
+<img src="./mirror.image/M.15.png" onclick="openLightbox(this.src)">
+<img src="./mirror.image/M.16.jpg" onclick="openLightbox(this.src)">
+<img src="./mirror.image/M.17.jpg" onclick="openLightbox(this.src)">
+<img src="./mirror.image/M.18.jpg" onclick="openLightbox(this.src)">
+<img src="./mirror.image/M.19.png" onclick="openLightbox(this.src)">
+<img src="./mirror.image/M.20.png" onclick="openLightbox(this.src)">
 </div>
 
-<!-- Lightbox -->
-<div id="lightbox" onclick="closeLightbox()">
+<div id="lightbox" onclick="this.style.display='none'">
   <img id="lightbox-img">
 </div>
 
@@ -140,9 +121,6 @@ h1,h2{margin:20px 0}
 function openLightbox(src){
   document.getElementById("lightbox").style.display="flex";
   document.getElementById("lightbox-img").src=src;
-}
-function closeLightbox(){
-  document.getElementById("lightbox").style.display="none";
 }
 </script>
 
